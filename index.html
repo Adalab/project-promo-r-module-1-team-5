@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Styles/reset.css">
-    <link rel="stylesheet" href="./Styles/main.css">    
+    <link rel="stylesheet" href="./Styles/main.css">   
+    <script src="https://kit.fontawesome.com/a4fbee8be4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@400;500&display=swap" rel="stylesheet"> 
     <title>Modulo 1 Equipo 5</title>
 </head>
 <body>
     <header class="header">
-        <h1 class="Text-Style-13">Las almohadas</h1>
+        <h1 class="text-style-13 almohadas">LAS ALMOHADAS</h1>
         <nav>
             <ul class="lista-navegador">
-                <li class="Text-Style-7"><a href="#">Equipo</a></li>
-                <li class="Text-Style-7"><a href="#">Quiénes somos</a></li>
-                <li class="Text-Style-7"><a href="#">Contacto</a></li>
+                <li class="Text-Style-7"><a href="#equipo">EQUIPO</a></li>
+                <li class="Text-Style-7"><a href="#quienes">QUIÉNES SOMOS</a></li>
+                <li class="Text-Style-7"><a href="#">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
@@ -27,25 +31,25 @@
             <img class="imagen-hero" src="./images/imagen-grupo.jpg" alt="Imagen grupo">
             <p class="lema">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere voluptas officiis iure non aperiam sequi. </p>
         </section>
-        <section class="team">
+        <section class="team" id="equipo">
             <div class="equipo">
-                <h2 class="text-style-5">Equipo</h2>
-                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dicta officiis quidem ea repellendus facilis accusamus nesciunt omnis iste laborum soluta sunt culpa quaerat assumenda exercitationem cupiditate itaque architecto voluptatum.</P>
+                <h2 class="text-style-5 equipo-titulo">EQUIPO</h2>
+                <P class="text-equipo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, dicta officiis quidem ea repellendus facilis accusamus nesciunt omnis iste laborum soluta sunt culpa quaerat assumenda exercitationem cupiditate itaque architecto voluptatum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus consequuntur autem minima nostrum aliquam error in deserunt, unde debitis libero architecto quasi excepturi corporis. Asperiores ipsam quo iure eaque voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. A sapiente nisi alias dolor. Unde, tempora dicta maiores, illum distinctio consectetur, sequi id facilis ab neque nobis. Illum unde mollitia facilis?</P>
             </div>
             <div class="cuadradito"></div>
             <div class="f-d">
                 <div class="fortalezas">
                     <h3 class="text-style-6">Fortalezas</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti, accusantium amet laboriosam optio totam, dolorum suscipit impedit unde commodi ipsum non corporis consequuntur vitae porro ipsam, quo a sint.</p>
+                    <p class="f-d-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corrupti, accusantium amet laboriosam optio totam, dolorum suscipit impedit unde commodi ipsum non corporis consequuntur vitae porro ipsam, quo a sint.</p>
                 </div>
             
                 <div class="debilidades">
                     <h3 class="text-style-6">Debilidades</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cumque earum possimus, ratione vero aspernatur exercitationem dolorem molestias est ipsa unde iure nobis laboriosam facere repellat animi quaerat quae repellendus?</p>
+                    <p class="f-d-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cumque earum possimus, ratione vero aspernatur exercitationem dolorem molestias est ipsa unde iure nobis laboriosam facere repellat animi quaerat quae repellendus?</p>
                 </div>
             </div>   
         </section>
-        <section class="who">
+        <section class="who" id="quienes">
             <div class="who-title-father">
                 <h2 class="who-title">QUIÉNES SOMOS</h2>
             </div>
@@ -54,10 +58,13 @@
                 <h3 class="name">Ana Vellisco</h3>
                 <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima asperiores voluptas unde voluptates sed in eligendi quaerat, aspernatur aliquam vel consectetur iste at dolor id temporibus dolores veniam? Dolore, optio!</p>
                 <ul class="social">
-                    <li><a href=""><i class="fa-brands fa-twitter icon"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-linkedin-in icon"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-github-alt icon"></i></a></li>
-                    <li><a href=""><i class="fa-solid fa-envelope icon"></i></a></li>
+                    <li class="dots"><a href=""><i class="fa-brands fa-twitter icon"></i></a></li>
+                    <li>·</li>
+                    <li class="dots"><a href=""><i class="fa-brands fa-linkedin-in icon"></i></a></li>
+                    <li>·</li>
+                    <li class="dots"><a href=""><i class="fa-brands fa-github-alt icon"></i></a></li>
+                    <li>·</li>
+                    <li class="dots"><a href=""><i class="fa-solid fa-envelope icon"></i></a></li>
                 </ul>
             </article>
             <article class="article">
@@ -66,8 +73,11 @@
                 <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima asperiores voluptas unde voluptates sed in eligendi quaerat, aspernatur aliquam vel consectetur iste at dolor id temporibus dolores veniam? Dolore, optio!</p>
                 <ul class="social">
                     <li><a href=""><i class="fa-brands fa-twitter icon"></i></a></li>
+                    <li>·</li>
                     <li><a href=""><i class="fa-brands fa-linkedin-in icon"></i></a></li>
+                    <li>·</li>
                     <li><a href=""><i class="fa-brands fa-github-alt icon"></i></a></li>
+                    <li>·</li>
                     <li><a href=""><i class="fa-solid fa-envelope icon"></i></a></li>
                 </ul>
             </article>
@@ -77,8 +87,11 @@
                 <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima asperiores voluptas unde voluptates sed in eligendi quaerat, aspernatur aliquam vel consectetur iste at dolor id temporibus dolores veniam? Dolore, optio!</p>
                 <ul class="social">
                     <li><a href=""><i class="fa-brands fa-twitter icon"></i></a></li>
+                    <li>·</li>
                     <li><a href=""><i class="fa-brands fa-linkedin-in icon"></i></a></li>
+                    <li>·</li>
                     <li><a href=""><i class="fa-brands fa-github-alt icon"></i></a></li>
+                    <li>·</li>
                     <li><a href=""><i class="fa-solid fa-envelope icon"></i></a></li>
                 </ul>
             </article>
@@ -88,8 +101,11 @@
                 <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima asperiores voluptas unde voluptates sed in eligendi quaerat, aspernatur aliquam vel consectetur iste at dolor id temporibus dolores veniam? Dolore, optio!</p>
                 <ul class="social">
                     <li><a href=""><i class="fa-brands fa-twitter icon"></i></a></li>
+                    <li>·</li>
                     <li><a href=""><i class="fa-brands fa-linkedin-in icon"></i></a></li>
+                    <li>·</li>
                     <li><a href=""><i class="fa-brands fa-github-alt icon"></i></a></li>
+                    <li>·</li>
                     <li><a href=""><i class="fa-solid fa-envelope icon"></i></a></li>
                 </ul>
             </article>
@@ -97,9 +113,9 @@
 <footer class="footer">
     <h4 class="title-footer">LAS ALMOHADAS © 2022</h4>
     <ul class="links">
-        <li>EQUIPO</li>
-        <li>QUIÉNES SOMOS</li>
-        <li>CONTACTO</li>
+        <li><a href="#equipo">EQUIPO</a></li>
+        <li><a href="#quienes">QUIÉNES SOMOS</a> </li>
+        <li><a href="#">CONTACTO</a></li>
     </ul>
 
     <img src="./images/logo-adalab.png" alt="Logo Adalab" class="logo-adalab">
