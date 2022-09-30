@@ -68,10 +68,10 @@
 
 .who-title-father {
     text-align: center;
+    width: 100vw;
 }
 
 .who-title {
-    width: 320px;
     padding-top: 20px;
     background-color: white;
     color: #099d8d;
@@ -79,7 +79,7 @@
     text-align: center;
 }
 .article {
-    width: 290px;
+    
     padding-left: 20px;
     padding-top: 20px;
     display: flex;
