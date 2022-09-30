@@ -1,0 +1,88 @@
+
+
+
+
+.who-title-father {
+    text-align: center;
+}
+
+.who-title {
+    width: 320px;
+    padding-top: 20px;
+    background-color: white;
+    color: #099d8d;
+    font-weight: bold;
+    text-align: center;
+}
+.article {
+    width: 290px;
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 180px;
+    border-radius: 4px;
+    border: solid 5px rgba(0, 0, 0, 0.08) ;
+
+}
+
+.name {
+    font-weight: bold;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.text {
+    text-align: center;
+}
+
+.social {
+    padding-top: 10px;
+    display: flex;
+    gap: 8px;
+    justify-content:space-around;
+    color: #099d8d;
+}
+
+.icon {
+    color: #099d8d;
+}
+
+.footer{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title-footer{
+    color:#b8b8b9;
+    padding-top: 50px;
+    font-size: 15px;
+    
+}
+
+.links{
+
+    padding-top:10px;
+}
+
+.links li{
+    padding: 3px;
+    text-align: center;
+}
+
+
+.logo-adalab{
+
+    width:116px;
+
+}
