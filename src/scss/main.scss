@@ -1,0 +1,298 @@
+/*@import 'core/variables';
+@import 'core/reset';
+@import 'components/code';
+@import 'components/links';
+@import 'layout/page';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'pages/index';
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*EMPIEZA AQUÍ*/
+
+:root {
+    --type-r: 'Rubik', sans-serif;
+    --type-os: 'Open Sans', sans-serif;
+    --color-b: #14d9c4;
+    --color-gb: #099d8d;
+    --color-grey: #54585a;
+    --color-blondgrey: #b8b8b9;
+    --color-w: white;
+}
+.header {
+    text-align: center;
+    background-color: var(--color-gb);
+    color: white;
+    position: fixed;
+    width:100vw;
+    z-index: 2;
+   
+}
+.almohadas {
+    padding: 1.7rem;
+    
+}
+.text-style-13 {
+    font-size: 18px;
+    font-family: var(--type-r);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.lista-navegador {
+    display: flex;
+    justify-content:space-around;
+    background-color: var(--color-b);    
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    
+}
+.lista-navegador a {
+    text-decoration: none;
+    color: var(--color-w);
+}
+.text-style-7 {
+    text-transform: uppercase;
+    font-family: var(--type-r);
+    font-size: 15px;
+}
+.text-style-5 {
+    text-transform: uppercase;
+    font-family: var(--type-r);
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--color-b);    
+}
+.hero {
+    background-image: url(/assets/images/imagen-grupo.jpg);
+    max-width: 100vw;
+    height: 28rem;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.lema {
+    font-family: var(--type-os);
+    background-color: var(--color-w);
+    margin: 0 1rem 0 1rem;
+    text-align: center;
+    padding: 1.6rem;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.39;
+    
+}
+.equipo {
+    padding: 0.65rem;
+    text-align: center;   
+    margin: 0rem 0.7rem 2rem 0.7rem;
+    color: var(--color-blondgrey);
+}
+.equipo-titulo {
+    margin-bottom: 1rem;
+}
+.text-equipo{
+    font-size: 16px;
+    color: var(--color-grey);
+    font-family: var(--type-os);
+    line-height: 1.5;
+}
+
+.text-style-6 {
+    font-family: var(--type-r); 
+    font-size: 1.6rem;  
+    font-weight: 500;  
+    font-stretch: normal;  
+    font-style: normal;  
+    line-height: 2.05;  
+    letter-spacing: normal;  
+    text-align: center;  
+    color: var(--color-gb)  
+}
+.cuadradito {
+    width: 1.875rem;
+    height: 1.875rem;
+    background-color: var(--color-w);    
+    position: absolute;
+    left: 50%;    
+    transform: translate(-50%, -50%) rotate(45deg);  
+}
+.f-d {
+    color: var(--color-blondgrey);
+    background-color: rgba(184, 184, 184, 0.2);
+    padding: 2rem 1rem 3.7rem 1rem;
+    text-align: center;  
+ 
+}
+.f-d-texto {
+    font-size: 16px;
+    font-family: var(--type-os);
+    color: var(--color-grey);
+    line-height: 1.5;
+}
+.fortalezas {
+    margin-bottom: 1.7rem;
+}
+.who {
+    margin-bottom: 4rem;
+}
+.who-title {
+    padding: 2.37rem 0 1.27rem 0;
+    background-color: white;
+    color: var(--color-gb);
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: var(--type-r); 
+    text-transform: uppercase;
+    text-align: center;
+}
+.article {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 180px;
+    border-radius: 4px;
+    border: solid 5px rgba(0, 0, 0, 0.08) ;
+
+}
+
+.name {
+    font-weight: bold;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: var(--type-os);
+    font-size: 20px;
+}
+
+.text {
+    font-size: 16px;
+    text-align: center;
+    font-family: var(--type-os);
+    margin: 0rem 0.7rem 0.7rem 0.7rem;
+    color: var(--color-grey);
+    line-height: 1.5;
+}
+
+.social {
+    padding-top: 20px;
+    padding-bottom: 23px;
+    display: flex;
+    gap: 4px;
+    justify-content:space-around;
+    color: var(--color-gb);
+    text-align: center;
+}
+
+.icon {
+    color: var(--color-gb);
+    padding:0.2rem;
+}
+.dots::after{
+    font-weight: bolder; 
+    content:"·";
+    margin:0 0.2rem 0 0.2rem;
+}
+.footer{
+    font-family: var(--type-os);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 0.1rem var(--color-blondgrey);
+}
+
+.title-footer{
+    color: var(--color-blondgrey);
+    padding-top: 50px;
+    font-size: 15px;
+    text-transform: uppercase;    
+}
+
+.links{
+    margin-bottom: 27px;
+    padding-top:15px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase; 
+    line-height: 1.43;     
+}
+.links li{
+    padding: 3px;
+    text-align: center;    
+}
+.links li a{
+    text-decoration: none;
+    color: var(--color-grey);
+}
+.logo-adalab{
+    width:116px;
+    margin-bottom: 37px;
+}
