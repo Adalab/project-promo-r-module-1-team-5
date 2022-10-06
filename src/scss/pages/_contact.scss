@@ -1,5 +1,84 @@
 .hero-contact {
     background-image: url("../images/contact-girl.png");
-    width: 100%;
-    height: 200px;
+    width: 100vw;
+    height: 250px;
+    background-size:cover;
+    background-position: center;
+
+}
+
+
+
+.main-title {
+    margin-top: 1.875rem;
+    text-align: center;
+    font-family: $text-title;
+    font-weight: 500;
+    color: $primary-color;
+    text-transform: uppercase;
+}
+
+.main-par {
+    margin-top: 0.938rem;
+    text-align: center;
+    font-family: $text-font;
+    line-height: 1.5;
+    color: $primary-text-color;
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
+}
+
+.main-par-small {
+    margin-top: 2rem;
+    text-align: center;
+    font-family: $text-font;
+    font-size: 12px;
+    color: $primary-text-color;
+}
+
+.main-par-asterisk {
+    color: $secondary-color;
+}
+
+.section-form {
+    margin-top: 4rem;
+    
+}
+
+.section-form-label {
+    color: $primary-text-color;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.938rem;
+    margin-right: 0.938rem;
+    line-height: 40px;
+    margin-bottom: 0.7rem;
+
+}
+.asterisk::after{
+    content: "*";
+    color: $secondary-color;
+    font-size: 14px;
+}
+.section-form-label input {
+    padding: 8px;
+    
+    
+}
+
+.button {
+    margin-top: 1.875rem;
+    margin-bottom: 5rem;
+    margin-left: 0.5rem;
+    width: 95%;
+    height: 2.813rem;
+    color: $tertiary-color;
+    text-transform: uppercase;
+    font-family: $text-font;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: $primary-color;
+    border-radius: 6px;
+    border: none;
 }
