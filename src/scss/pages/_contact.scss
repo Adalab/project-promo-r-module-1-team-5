@@ -1,5 +1,8 @@
 .hero-contact {
     background-image: url("../images/contact-girl.png");
-    width: 100%;
-    height: 200px;
+    max-width: 100vw;
+    height: 28rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
