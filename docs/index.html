@@ -1,68 +1,171 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
-  </head>
 
-  <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <script src="https://kit.fontawesome.com/a4fbee8be4.js" crossorigin="anonymous"></script>
+  <title>Modulo 1 Equipo 5</title>
+</head>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+<body>
+  <header class="header">
+      <h1 class="header__title">Pillow Heads</h1>
+      <nav class="header__nav">
+          <ul class="header__nav--list">
+              <li class="nav__list-item"><a href="./index.html#equipo">Equipo</a></li>
+              <li class="nav__list-item"><a href="./index.html#quienes">Quiénes somos</a></li>
+              <li class="nav__list-item"><a href="./contact.html">Contacto</a></li>
+          </ul>
+      </nav>
+  </header>
+  <main>
+    <section class="hero">
+        <div class="hero__div">
+            <p class="lema">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
+                voluptas officiis iure non aperiam sequi.
+            </p>
+        </div>
+    </section>
+    <section class="team" id="equipo">
+      <article class="equipo">
+          <h2 class="text-style-5 equipo-titulo">Equipo</h2>
+          <p class="text-equipo">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Distinctio, dicta officiis quidem ea repellendus facilis accusamus
+              nesciunt omnis iste laborum soluta sunt culpa quaerat assumenda
+              exercitationem cupiditate itaque architecto voluptatum. Lorem ipsum
+              dolor sit amet consectetur, adipisicing elit. Repellendus
+              consequuntur autem minima nostrum aliquam error in deserunt, unde
+              debitis libero architecto quasi excepturi corporis. Asperiores ipsam
+              quo iure eaque voluptatibus! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. A sapiente nisi alias dolor. Unde, tempora dicta
+              maiores, illum distinctio consectetur, sequi id facilis ab neque
+              nobis. Illum unde mollitia facilis?
+          </p>
+      </article>
+      <div class="cuadradito"></div>
+      <article class="f-d">
+          <article class="fortalezas">
+              <h3 class="text-style-6">Fortalezas</h3>
+              <p class="f-d-texto">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  corrupti, accusantium amet laboriosam optio totam, dolorum
+                  suscipit impedit unde commodi ipsum non corporis consequuntur
+                  vitae porro ipsam, quo a sint.
+              </p>
+          </article>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+          <article class="debilidades">
+              <h3 class="text-style-6">Debilidades</h3>
+              <p class="f-d-texto">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates cumque earum possimus, ratione vero aspernatur
+                  exercitationem dolorem molestias est ipsa unde iure nobis
+                  laboriosam facere repellat animi quaerat quae repellendus?
+              </p>
+          </article>
+      </article>
+    </section>
+    <section class="who" id="quienes">
+      <div class="who-title-father">
+        <h2 class="who-title">Quiénes somos</h2>
+      </div>
+      <article class="article">
+          <img class="img" src="./assets/images/emoji-carita-llorando.jpg" alt="Ana Vellisco" />
+          <h3 class="name">Ana Vellisco</h3>
+          <p class="text">Ana es estupenda</p>
+          <ul class="social">
+              <li class="dots">
+                  <a href=""><i class="fa-brands fa-twitter icon"></i></a>
+              </li>
+              <li class="dots">
+                  <a href=""><i class="fa-brands fa-linkedin-in icon"></i></a>
+              </li>
+              <li class="dots">
+                  <a href="https://github.com/avbbs"><i class="fa-brands fa-github-alt icon"></i></a>
+              </li>
+              <li>
+                  <a href="ana.vellisco@gmail.com"><i class="fa-solid fa-envelope icon"></i></a>
+              </li>
+          </ul>
+      </article>
+      <article class="article">
+          <img class="img" src="./assets/images/emoji-carita-llorando.jpg" alt="Bruna Da Silva" />
+          <h3 class="name">Bruna Da Silva</h3>
+          <p class="text">Bruna es estupenda</p>
+          <ul class="social">
+              <li class="dots">
+                  <a href="https://twitter.com/brunadasilvabz"><i class="fa-brands fa-twitter icon"></i></a>
+              </li>
+              <li class="dots">
+                  <a href="https://www.linkedln.com/in/bruna-da-silva-barrozo-b6064923a/"><i class="fa-brands fa-linkedin-in icon"></i></a>
+              </li>
+              <li class="dots">
+                  <a href="https://github.com/brunadasilvabz"><i class="fa-brands fa-github-alt icon"></i></a>
+              </li>
+              <li>
+                  <a href=""><i class="fa-solid fa-envelope icon"></i></a>
+              </li>
+          </ul>
+      </article>
+      <article class="article">
+          <img class="img" src="./assets/images/emoji-carita-llorando.jpg" alt="Natalia Gómez" />
+          <h3 class="name">Natalia Gómez</h3>
+          <p class="text">Natalia es estupenda</p>
+          <ul class="social">
+              <li class="dots">
+                  <a href=""><i class="fa-brands fa-twitter icon"></i></a>
+              </li>
+              <li class="dots">
+                  <a href=""><i class="fa-brands fa-linkedin-in icon"></i></a>
+              </li>
+              <li class="dots">
+                  <a href="https://github.com/Natalia-GP"><i class="fa-brands fa-github-alt icon"></i></a>
+              </li>
+              <li>
+                  <a href="natgp86@gmail.com"><i class="fa-solid fa-envelope icon"></i></a>
+              </li>
+          </ul>
+      </article>
+      <article class="article">
+          <img class="img" src="./assets/images/emoji-carita-llorando.jpg" alt="Sofía Gracia" />
+          <h3 class="name">Sofía Gracia</h3>
+          <p class="text">Sofía es estupenda también</p>
+          <ul class="social">
+              <li class="dots">
+                  <a href="https://twitter.com/calpurniax_"><i class="fa-brands fa-twitter icon"></i></a>
+              </li>
+              <li class="dots">
+                  <a href="#"><i class="fa-brands fa-linkedin-in icon"></i></a>
+              </li>
+              <li class="dots">
+                  <a href="https://github.com/Calpurniax"><i class="fa-brands fa-github-alt icon"></i></a>
+              </li>
+              <li>
+                  <a href="sofia.gracia@gmail.com"><i class="fa-solid fa-envelope icon"></i></a>
+              </li>
+          </ul>
+      </article>
+    </section>
+  </main>
+  <footer class="footer">
+      <h4 class="title-footer">Pillow Heads © 2022</h4>
+      <ul class="links">
+          <li><a href="./index.html#equipo">Equipo</a></li>
+          <li><a href="./index.html#quienes">Quiénes somos</a></li>
+          <li><a href="./contact.html">Contacto</a></li>
+      </ul>
 
-          </li>
-        </ul>
-      </main>
+      <img src="./assets/images/logo-adalab.png" alt="Logo Adalab" class="logo-adalab" />
+  </footer>
+</body>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-        </small>
-      </footer>
-
-    </div>
-    <script src="./assets/js/main.js"></script>
-  </body>
 </html>
