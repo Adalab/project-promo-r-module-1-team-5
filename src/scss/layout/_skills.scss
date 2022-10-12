@@ -3,6 +3,17 @@
     background-color: $fourth-color;
     padding: 2rem 1rem 3.7rem 1rem;
     text-align: center;   
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 3rem;
+    }
+    @include desktop {
+        gap: 5rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
     &__strength {
         margin-bottom: 1.7rem;
     }
@@ -15,10 +26,13 @@
     line-height: 2.05;  
     letter-spacing: normal;  
     text-align: center;  
-    color: $primary-color;  
+    color: $primary-color; 
+    @include tablet {
+        padding-bottom: 1rem; 
     }
+}
     &__text {
-        font-size: 16px;
+    font-size: 16px;
     font-family: $text-font;
     color: $primary-text-color;
     line-height: 1.5;
