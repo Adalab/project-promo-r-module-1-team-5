@@ -6,9 +6,9 @@
   align-items: center;
   border-top: solid 0.1rem $secondary-text-color;
   @include tablet {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;    
     padding: 2rem 3rem 3rem 3rem;    
   }
   @include desktop {
@@ -20,7 +20,8 @@
     font-size: 15px;
     text-transform: uppercase; 
     @include tablet {      
-      order: 1;      
+      grid-column: 1;      
+      grid-row: 1;
       padding-top: 0rem;     
       font-size: 13px;
     }        
@@ -33,11 +34,15 @@
     text-transform: uppercase; 
     line-height: 1.43;  
     text-align: center;       
-    @include tablet {      
-      order: 3;
+    @include tablet {            
       text-align: right;
       padding-top: 0rem;  
-      line-height: 2rem;    
+      line-height: 2rem; 
+      grid-column: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+
+       
     }         
   }  
 }
@@ -49,11 +54,12 @@
   width:116px;
   margin-bottom: 37px;
   @include tablet {         
-    order: 2;
-    position:relative;
-    top: 3.7vh;
-    right: 40.2vw;
+    order: 2;    
     transform: scale(1.2);
-    padding-left: 3rem;
-  }   
+    
+    grid-column: 1;      
+    grid-row: 2;
+   
+
+    }   
 }
