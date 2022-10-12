@@ -14,8 +14,8 @@
     }
 }
 .slogan {
-    font-family: var(--type-os);
-    background-color: var(--color-w);
+    font-family: $text-font;
+    background-color: $tertiary-color;
     margin: 0 1rem 0 1rem;
     text-align: center;
     padding: 1.6rem;

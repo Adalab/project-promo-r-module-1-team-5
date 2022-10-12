@@ -1,14 +1,14 @@
 .f-d {
-    color: var(--color-blondgrey);
-    background-color: rgba(184, 184, 184, 0.2);
+    color: $secondary-text-color;
+    background-color: $fourth-color;
     padding: 2rem 1rem 3.7rem 1rem;
     text-align: center;   
 }
 .strength {
     margin-bottom: 1.7rem;
 }
-text-style-6 {
-    font-family: var(--type-r); 
+.text-style-6 {
+    font-family: $text-title; 
     font-size: 1.6rem;  
     font-weight: 500;  
     font-stretch: normal;  
@@ -16,19 +16,19 @@ text-style-6 {
     line-height: 2.05;  
     letter-spacing: normal;  
     text-align: center;  
-    color: var(--color-gb)  
+    color: $primary-color;  
 }
 .f-d-text {
     font-size: 16px;
-    font-family: var(--type-os);
-    color: var(--color-grey);
+    font-family: $text-font;
+    color: $primary-text-color;
     line-height: 1.5;
 }
 
 .square {
     width: 1.875rem;
     height: 1.875rem;
-    background-color: var(--color-w);    
+    background-color: $tertiary-color;    
     position: absolute;
     left: 50%;    
     transform: translate(-50%, -50%) rotate(45deg);  

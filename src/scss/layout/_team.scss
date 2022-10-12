@@ -2,11 +2,11 @@
     padding: 0.65rem;
     text-align: center;   
     margin: 0rem 0.7rem 2rem 0.7rem;
-    color: var(--color-blondgrey);   
+    color: $secondary-text-color;   
 }
 .text-style-5 {
     text-transform: uppercase;
-    font-family: var(--type-r);
+    font-family: $text-title;
     font-size: 24px;
     font-weight: 500;
     font-stretch: normal;
@@ -14,17 +14,17 @@
     line-height: 1.88;
     letter-spacing: normal;
     text-align: center;
-    color: var(--color-b);    
+    color: $secondary-color;    
 }
 .team-title {
     margin-bottom: 1rem;
     @media all and (min-width: 768px) {
-        color: var(--color-gb);
+        color: $primary-color;
     }
 }
 .text-team{
     font-size: 16px;
-    color: var(--color-grey);
-    font-family: var(--type-os);
+    color: $primary-text-color;
+    font-family: $text-font;
     line-height: 1.5;
 }

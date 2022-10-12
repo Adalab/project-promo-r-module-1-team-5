@@ -3,13 +3,13 @@
 }
 .who-title {
     padding: 2.37rem 0 1.27rem 0;
-    background-color: white;
-    color: var(--color-gb);
+    background-color: $tertiary-color;
+    color: $primary-color;
     font-weight: bold;
     text-align: center;
     font-size: 24px;
     font-weight: 500;
-    font-family: var(--type-r); 
+    font-family: $text-title; 
     text-transform: uppercase;
     text-align: center;
 }
@@ -30,19 +30,19 @@
 
 .name {
     font-weight: bold;
-    color: black;
+    color:$membersname-color;
     padding-top: 20px;
     padding-bottom: 10px;
-    font-family: var(--type-os);
+    font-family: $text-font;
     font-size: 20px;
 }
 
 .text {
     font-size: 16px;
     text-align: center;
-    font-family: var(--type-os);
+    font-family: $text-font;
     margin: 0rem 0.7rem 0.7rem 0.7rem;
-    color: var(--color-grey);
+    color: $primary-text-color;
     line-height: 1.5;
 }
 
@@ -52,12 +52,12 @@
     display: flex;
     gap: 4px;
     justify-content:space-around;
-    color: var(--color-gb);
+    color: $primary-color;
     text-align: center;
 }
 
 .icon {
-    color: var(--color-gb);
+    color: $primary-color;
     padding:0.2rem;
 }
 .dots::after{
