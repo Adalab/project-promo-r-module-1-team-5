@@ -1,0 +1,36 @@
+.f-d {
+    color: var(--color-blondgrey);
+    background-color: rgba(184, 184, 184, 0.2);
+    padding: 2rem 1rem 3.7rem 1rem;
+    text-align: center;   
+}
+.strength {
+    margin-bottom: 1.7rem;
+}
+text-style-6 {
+    font-family: var(--type-r); 
+    font-size: 1.6rem;  
+    font-weight: 500;  
+    font-stretch: normal;  
+    font-style: normal;  
+    line-height: 2.05;  
+    letter-spacing: normal;  
+    text-align: center;  
+    color: var(--color-gb)  
+}
+.f-d-text {
+    font-size: 16px;
+    font-family: var(--type-os);
+    color: var(--color-grey);
+    line-height: 1.5;
+}
+
+.square {
+    width: 1.875rem;
+    height: 1.875rem;
+    background-color: var(--color-w);    
+    position: absolute;
+    left: 50%;    
+    transform: translate(-50%, -50%) rotate(45deg);  
+}
+
