@@ -1,4 +1,4 @@
-.footer{
+.footer {
   font-family: $text-font;
   display: flex;
   flex-direction: column;
@@ -8,58 +8,52 @@
   @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;    
-    padding: 2rem 3rem 3rem 3rem;    
+    grid-template-rows: 1fr 1fr;
+    padding: 2rem 3rem 3rem 3rem;
   }
   @include desktop {
-    padding: 2rem 6rem 3rem 6rem;   
+    padding: 2rem 6rem 3rem 6rem;
   }
-  &__title{
+  &__title {
     color: $secondary-text-color;
     padding-top: 50px;
     font-size: 15px;
-    text-transform: uppercase; 
-    @include tablet {      
-      grid-column: 1;      
+    text-transform: uppercase;
+    @include tablet {
+      grid-column: 1;
       grid-row: 1;
-      padding-top: 0rem;     
+      padding-top: 0rem;
       font-size: 13px;
-    }        
+    }
   }
   &__links {
     margin-bottom: 27px;
-    padding-top:15px;
+    padding-top: 15px;
     font-weight: 600;
     font-size: 14px;
-    text-transform: uppercase; 
-    line-height: 1.43;  
-    text-align: center;       
-    @include tablet {            
+    text-transform: uppercase;
+    line-height: 1.43;
+    text-align: center;
+    @include tablet {
       text-align: right;
-      padding-top: 0rem;  
-      line-height: 2rem; 
+      padding-top: 0rem;
+      line-height: 2rem;
       grid-column: 3;
       grid-row-start: 1;
       grid-row-end: 3;
-
-       
-    }         
-  }  
+    }
+  }
 }
-.footer__links--li a{
-    text-decoration: none;
-    color: $primary-text-color;
+.footer__links--li a {
+  text-decoration: none;
+  color: $primary-text-color;
 }
-.logo-adalab{
-  width:116px;
+.logo-adalab {
+  width: 116px;
   margin-bottom: 37px;
-  @include tablet {         
-    order: 2;    
+  @include tablet {
     transform: scale(1.2);
-    
-    grid-column: 1;      
+    grid-column: 1;
     grid-row: 2;
-   
-
-    }   
+  }
 }
