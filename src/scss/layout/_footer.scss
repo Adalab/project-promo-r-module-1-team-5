@@ -5,32 +5,55 @@
   justify-content: center;
   align-items: center;
   border-top: solid 0.1rem $secondary-text-color;
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 3rem 3rem 3rem;    
+  }
+  @include desktop {
+    padding: 2rem 6rem 3rem 6rem;   
+  }
+  &__title{
+    color: $secondary-text-color;
+    padding-top: 50px;
+    font-size: 15px;
+    text-transform: uppercase; 
+    @include tablet {      
+      order: 1;      
+      padding-top: 0rem;     
+      font-size: 13px;
+    }        
+  }
+  &__links {
+    margin-bottom: 27px;
+    padding-top:15px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase; 
+    line-height: 1.43;  
+    text-align: center;       
+    @include tablet {      
+      order: 3;
+      text-align: right;
+      padding-top: 0rem;  
+      line-height: 2rem;    
+    }         
+  }  
 }
-
-.title-footer{
-  color: $secondary-text-color;
-  padding-top: 50px;
-  font-size: 15px;
-  text-transform: uppercase;    
-}
-
-.links{
-  margin-bottom: 27px;
-  padding-top:15px;
-  font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase; 
-  line-height: 1.43;     
-}
-.links li{
-  padding: 3px;
-  text-align: center;    
-}
-.links li a{
-  text-decoration: none;
-  color: $primary-text-color;
+.footer__links--li a{
+    text-decoration: none;
+    color: $primary-text-color;
 }
 .logo-adalab{
   width:116px;
   margin-bottom: 37px;
+  @include tablet {         
+    order: 2;
+    position:relative;
+    top: 3.7vh;
+    right: 40.2vw;
+    transform: scale(1.2);
+    padding-left: 3rem;
+  }   
 }
