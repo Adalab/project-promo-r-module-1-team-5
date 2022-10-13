@@ -1,6 +1,6 @@
 .hero-contact {
     background-image: url("../images/image.png");
-    width: 100vw;
+    width: 100%;
     height: 250px;
     background-size:cover;
     background-position: center;
@@ -55,49 +55,34 @@
     color: $secondary-color;
 }
 
-.section-form {
-    margin-top: 3.6rem;
-    margin-left: 0.938rem;
-    margin-right: 0.938rem;
-
-    @include tablet {
-        margin-top: 0;
-    }
-    @include desktop {
-        margin-top: 5.25rem;
-        margin-left: 10rem;
-        margin-right: 10rem;
-    }    
-    
-}
 
 .section-form__label {
     color: $primary-text-color;
     font-family: $text-font;
     font-size: 14px;
     line-height: 40px;
-    margin-bottom: 0.7rem;
+    margin: 3.6rem 0.938rem 0.7rem 0.938rem;    
     display: flex;
     flex-direction: column;
-
+    justify-content: center;  
     @include tablet {
         padding: 8.5rem;
         padding-top: 3.6rem;
-        padding-bottom: 3.75rem;   
+        padding-bottom: 3.75rem;
+        margin-top: 0rem;  
     }
     @include desktop{
         padding: 18.75rem;
-    }
-        
-
-    
+        margin-top: 5.25rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }     
 }
 .section-form__label--asterisk::after{
     content: "*";
     color: $secondary-color;
     font-size: 14px;
-    margin-left: 0.2rem;
-   
+    margin-left: 0.2rem;   
 }
 
 .field {
@@ -107,33 +92,16 @@
 
     @include tablet {
         width: 27.6rem;
-    }
-
-
-    
+    }    
 }    
 .field::placeholder{
     color:$secondary-text-color;
 }    
  
-.mail{
-    padding: 10px;
-    font-family: $text-font;
-    width: 16.6rem;
-    
-    @include tablet {
-        width: 27.6rem;
-    }
- }
-
-.mail::placeholder {
-    color: $primary-text-color;
- }
  
 .section-form__elements {
     display: flex;
-    flex-direction: column;
-   
+    flex-direction: column;   
 }
 
 .send {
@@ -145,7 +113,7 @@
 
 .send__button {
     margin-top: 1.875rem;
-    width: 18.125rem;
+    width:18rem;
     height: 2.813rem;
     color: $tertiary-color;
     text-transform: uppercase;
