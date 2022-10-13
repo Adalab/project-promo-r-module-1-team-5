@@ -9,10 +9,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 2rem 3rem 3rem 3rem;
+    padding: 0.25rem 3rem 0.5rem 3rem;
   }
   @include desktop {
-    padding: 2rem 6rem 3rem 6rem;
+    padding: 0.25rem 6rem 0.5rem 6rem;
   }
   &__title {
     color: $secondary-text-color;
