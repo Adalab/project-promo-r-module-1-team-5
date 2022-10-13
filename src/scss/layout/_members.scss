@@ -1,5 +1,10 @@
 .who {
     margin-bottom: 4rem;
+    @include tablet{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        
+    }
 }
 .who-title {
     padding: 2.37rem 0 1.27rem 0;
@@ -12,20 +17,70 @@
     font-family: $text-title; 
     text-transform: uppercase;
     text-align: center;
+    @include tablet{
+        padding: 3.7rem 0 2.3rem 0; 
+    }
 }
-.article {
+
+.left {
     padding-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-bottom: 2rem;
+      .text {
+        text-align: left;
+    }  
+    .div--text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        }            
+    }
+    @include desktop {
+        align-items: flex-start;
+    }
 }
+.right {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include tablet {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        text-align: right;        
+        margin-bottom: 2rem;  
+        .text {
+            text-align: right;
+        }  
+        .div--text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }         
+    }
+    @include desktop {
+        align-items: flex-start;
+    }
+}
+
 
 .img {
     width: 180px;
     border-radius: 4px;
     border: solid 5px rgba(0, 0, 0, 0.08) ;
-
+    @include tablet {
+       margin:0 1rem 0 1rem;
+       width: 30%;
+    }
 }
 
 .name {
@@ -35,6 +90,13 @@
     padding-bottom: 10px;
     font-family: $text-font;
     font-size: 20px;
+    text-align: center;
+    @include tablet{
+        margin: 0rem 0.7rem 0.7rem 0.7rem;
+    }
+    @include desktop{
+        font-size: 26px;
+    }
 }
 
 .text {
@@ -44,21 +106,36 @@
     margin: 0rem 0.7rem 0.7rem 0.7rem;
     color: $primary-text-color;
     line-height: 1.5;
+    @include tablet{
+        text-align: left;       
+    }
+    @include desktop{
+        font-size: 22px;
+    }
 }
-
 .social {
     padding-top: 20px;
     padding-bottom: 23px;
     display: flex;
     gap: 4px;
-    justify-content:space-around;
+    justify-content:center;
     color: $primary-color;
     text-align: center;
+    @include tablet {
+        max-width: 40%;
+        margin: 0rem 0.7rem 0.7rem 0.7rem;   
+    }
+    @include desktop {
+        gap:0.7rem;
+    }
 }
 
 .icon {
     color: $primary-color;
     padding:0.2rem;
+    @include desktop{
+        transform: scale(1.5);
+    }
 }
 .dots::after{
     font-weight: bolder; 
