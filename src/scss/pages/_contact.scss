@@ -1,9 +1,24 @@
 .hero-contact {
-    background-image: url("../images/contact-girl.png");
+    background-image: url("../images/image.png");
     width: 100vw;
     height: 250px;
     background-size:cover;
     background-position: center;
+    @include tablet {
+        height: 18.75rem;
+    }
+}
+
+.main-article {
+
+    @include tablet {
+        margin-left: 0.938rem;
+        margin-right: 0.938rem;
+        padding-left: 8.5rem;
+        padding-right: 8.5rem;
+        padding-top: 1.8rem;
+    }
+
 }
 
 .main-title {
@@ -21,6 +36,7 @@
     margin-top: 0.938rem;
     text-align: center;
     font-family: $text-font;
+    font-size: 16px;
     line-height: 1.5;
     color: $primary-text-color;
     margin-left: 1.4rem;
@@ -40,9 +56,18 @@
 }
 
 .section-form {
-    margin-top: 3.2rem;
+    margin-top: 3.6rem;
+    margin-left: 0.938rem;
+    margin-right: 0.938rem;
 
-
+    @include tablet {
+        margin-top: 0;
+    }
+    @include desktop {
+        margin-top: 5.25rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }    
     
 }
 
@@ -50,13 +75,22 @@
     color: $primary-text-color;
     font-family: $text-font;
     font-size: 14px;
-    margin-left: 0.938rem;
-    margin-right: 0.938rem;
     line-height: 40px;
     margin-bottom: 0.7rem;
     display: flex;
     flex-direction: column;
-      
+
+    @include tablet {
+        padding: 8.5rem;
+        padding-top: 3.6rem;
+        padding-bottom: 3.75rem;   
+    }
+    @include desktop{
+        padding: 18.75rem;
+    }
+        
+
+    
 }
 .section-form__label--asterisk::after{
     content: "*";
@@ -69,6 +103,14 @@
 .field {
     padding:10px;
     font-family:$text-font;
+    width: 16.6rem;
+
+    @include tablet {
+        width: 27.6rem;
+    }
+
+
+    
 }    
 .field::placeholder{
     color:$secondary-text-color;
@@ -77,7 +119,11 @@
 .mail{
     padding: 10px;
     font-family: $text-font;
+    width: 16.6rem;
     
+    @include tablet {
+        width: 27.6rem;
+    }
  }
 
 .mail::placeholder {
@@ -90,11 +136,16 @@
    
 }
 
-.button {
+.send {
+    @include tablet {
+        display: flex;
+        justify-content: end;
+    }
+}
+
+.send__button {
     margin-top: 1.875rem;
-    margin-bottom: 5rem;
-    margin-left: 0.5rem;
-    width: 95%;
+    width: 18.125rem;
     height: 2.813rem;
     color: $tertiary-color;
     text-transform: uppercase;
@@ -104,5 +155,12 @@
     background-color: $primary-color;
     border-radius: 6px;
     border: none;
+    @include tablet{
+        width: 13rem;
+    }
+    @include desktop{
+        width: 17.375rem;
+        
+    }
 }
 
