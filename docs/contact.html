@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@400;500&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css"/>
+    <link rel="stylesheet" href="./assets/css/main.css" />
     <script src="https://kit.fontawesome.com/a4fbee8be4.js" crossorigin="anonymous"></script>
     <title>Modulo 1 Equipo 5 Contacto</title>
 </head>
 
 <body>
     <header class="header">
-        <h1 class="header__title">Pillow Heads</h1>
+        <h1 class="header__title"><a href="./index.html"> Pillow Heads</a></h1>
         <nav class="header__nav">
             <ul class="header__nav--list">
                 <li class="nav__list-item"><a href="./index.html#equipo">Equipo</a></li>
@@ -29,29 +29,36 @@
         <section class="hero-contact"></section>
         <article class="main-article">
             <h1 class="main-title">Contacto</h1>
-            <p class="main-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequatur velit fugit numquam nostrum id, natus reprehenderit! Illum possimus aperiam sint officia modi, provident, inventore ut natus iure recusandae eveniet.</p>
-            <p class="main-par-small">Todos los campos marcados con <span class="main-par-asterisk">*</span> son obligatorios</p>
+            <p class="main-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequatur velit fugit
+                numquam nostrum id, natus reprehenderit! Illum possimus aperiam sint officia modi, provident, inventore
+                ut natus iure recusandae eveniet.</p>
+            <p class="main-par-small">Todos los campos marcados con <span class="main-par-asterisk">*</span> son
+                obligatorios</p>
         </article>
         <section class="section-form">
-            <form class="section-form-label" action="./signup" method="post">
-                <label class="asterisk" for="fullName">Nombre Completo</label>
-                <input type="text" id="fullName" name="fullName" placeholder="Nombre..." required>
-                <label class="asterisk" for="email">Email</label>
-                <input type="email" id="email" name="email" value="nombre.apellidos@mail.com" required>
+            <form class="section-form__label" action="https://adalab-server-form.herokuapp.com/" method="post">
+                <label class="section-form__label--asterisk" for="fullName">Nombre completo</label>
+                <input class="field" type="text" id="fullName" name="fullName" placeholder="Nombre..." required>
+                <div class="section-form__elements"><label class="section-form__label--asterisk" for="email">Email</label>
+                <input class="mail" type="email" id="email" name="email" placeholder="nombre.apellidos@mail.com" required>
                 <label for="phone">Teléfono</label>
-                <input type="tel" id="phone" name="phone" placeholder="Ej: 123456789">
-                <label class="asterisk" for="message">Mensaje</label>
-                <textarea class="input"  name="message" id="message" cols="30" rows="5" placeholder="¿Qué necesitas?" required></textarea>
-                <input class="button" type="submit" id="submit" value="Enviar">
-            </form>    
+                <input class="field" type="tel" id="phone" name="phone" placeholder="Ej: 123456789">
+                </div>
+                <label class="section-form__label--asterisk" for="message">Mensaje</label>
+                <textarea class="field" name="message" id="message" cols="30" rows="5" placeholder="¿Qué necesitas?"required></textarea>
+                <div>
+                    <input class="button" type="submit" id="submit" value="Enviar">
+                </div>
+                
+            </form>
         </section>
     </main>
     <footer class="footer">
-        <h4 class="title-footer">Pillow Heads © 2022</h4>
-        <ul class="links">
-            <li><a href="./index.html#equipo">Equipo</a></li>
-            <li><a href="./index.html#quienes">Quiénes somos</a></li>
-            <li><a href="./contact.html">Contacto</a></li>
+        <h4 class="footer__title">Pillow Heads © 2022</h4>
+        <ul class="footer__links">
+            <li class="footer__links--li"><a href="./index.html#equipo">Equipo</a></li>
+            <li class="footer__links--li"><a href="./index.html#quienes">Quiénes somos</a></li>
+            <li class="footer__links--li"><a href="./contact.html">Contacto</a></li>
         </ul>
 
         <img src="./assets/images/logo-adalab.png" alt="Logo Adalab" class="logo-adalab" />
