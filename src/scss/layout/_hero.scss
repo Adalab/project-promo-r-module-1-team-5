@@ -22,11 +22,12 @@
     font-family: $text-font;
     background-color: $tertiary-color;
     margin: 0 1rem 0 1rem;
-    text-align: center;
-    padding: 1.6rem;
+    text-align: left;
+    padding: 1.3rem 0.7rem 0.7rem 0.7rem;
     font-size: 18px;
     font-weight: bolder;
     line-height: 1.39;
+    transform: translateY(50%);
     @include tablet{
         margin: 0 17rem 0 4.7rem;
         padding:1rem 1rem 0.7rem 1rem;

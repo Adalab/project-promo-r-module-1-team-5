@@ -21,10 +21,12 @@
     line-height: 1.88;
     letter-spacing: normal;
     text-align: center;
-    color: $secondary-color;    
+    color: $secondary-color;
+    gap: 5px;    
 }
 .team-title {
     margin-bottom: 1rem;
+    padding-top: 2.5rem;
     @media all and (min-width: 768px) {
         color: $primary-color;
     }
