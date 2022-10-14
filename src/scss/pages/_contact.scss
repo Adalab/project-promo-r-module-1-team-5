@@ -4,10 +4,7 @@
     height: 250px;
     background-size:cover;
     background-position: center;
-    @include tablet {
-        height: 18.75rem;
     }
-}
 
 .main-article {
 
@@ -55,30 +52,86 @@
     color: $secondary-color;
 }
 
+//PRUEB DIVS//
+.section__form{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form__label {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem 0 1rem;
+
+    @include tablet {
+        max-width:50%;
+        position: relative;
+        transform: translateX(50%);
+        
+    }
+    
+}
+.form__label--name{
+    display: flex;
+    flex-direction: column;
+    
+}
+.form__label--mail {
+    display: flex;
+    flex-direction: column;
+}
+.form__label--tel {
+    display: flex;
+    flex-direction: column;
+
+}
+.form__label--msg {
+    display: flex;
+    flex-direction: column;
+}
+.form__label--element {
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+
+
+
+
+
+/*
 
 .section-form__label {
     color: $primary-text-color;
     font-family: $text-font;
     font-size: 14px;
-    line-height: 40px;
-    margin: 3.6rem 0.938rem 0.7rem 0.938rem;    
+    //line-height: 40px;
+   // margin: 3.6rem 0.938rem 0.7rem 0.938rem;    
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
+    align-items: center;
 
-    @include tablet {
-        padding: 8.5rem;
-        padding-top: 3.6rem;
-        padding-bottom: 3.75rem;
-        margin-top: 0rem;  
+    /*@include tablet {
+        //padding: 8.5rem;
+       // padding-top: 3.6rem;
+       // padding-bottom: 3.75rem;
+        //margin-top: 0rem;  
     }
     @include desktop{
-        padding: 0;
-        margin-top: 5.25rem;
-        margin-left: 18.75rem;
-        margin-right: 18.75rem;
+       // padding: 0;
+       // margin-top: 5.25rem;
+        //margin-left: 18.75rem;
+        //margin-right: 18.75rem;//
+        
     }     
 }
+
 .section-form__label--asterisk::after{
     content: "*";
     color: $secondary-color;
@@ -91,12 +144,13 @@
     font-family:$text-font;
     width: 16.6rem;
 
-    @include tablet {
+    /*@include tablet {
         width: 27.6rem;
-    }
+    } */
 
-    @include desktop {
+    /*@include desktop {
         width: 36rem;
+        border-style: solid;
     }
    
 }    
@@ -110,42 +164,38 @@
 .section-form__elements {
     display: flex;
     flex-direction: column;
+    align-items: center;
     
     
-    @include desktop {
+   /* @include desktop {
         flex-direction: row;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         width: 100%;
-        gap: 2.5rem;
-      
-
+        gap: 2.4rem;
     }
 
-    /*&--div {
-        flex-direction: column;
-    }*/
 
-    &--mail{
+  /*  &--mail{
         @include desktop {
-            width: 24rem;
+            //width: 24rem;
             
         }
 
     }
     &--tel{
         @include desktop {
-            width: 8rem;
+            //width: 8rem;
             
         }
     }
     &--label{
-        @include desktop {
+        //@include desktop {
             
             
         }
         
-    }
+    } 
     
 }
 
@@ -154,6 +204,8 @@
     @include tablet {
         display: flex;
         justify-content: end;
+        //margin-top: 1rem;//
+        //margin-bottom: 7.5rem;//
     }
 
     @include desktop {
@@ -162,7 +214,7 @@
 }
 
 .send__button {
-    margin-top: 1.875rem;
+    //margin-top: 1.875rem;//
     width:18rem;
     height: 2.813rem;
     color: $tertiary-color;
@@ -173,12 +225,12 @@
     background-color: $primary-color;
     border-radius: 6px;
     border: none;
-    @include tablet{
-        width: 13rem;
+  /*  @include tablet{
+        //width: 13rem;
     }
     @include desktop{
-        width: 17.375rem;
+       // width: 17.375rem;
         
-    }
+    } 
 }
-
+*/
