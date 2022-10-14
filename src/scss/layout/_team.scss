@@ -34,7 +34,14 @@
 .italic{
     font-style: italic;
 }
-.text-team{
+.text-team1 {
+    font-size: 16px;
+    color: $primary-text-color;
+    font-family: $text-font;
+    line-height: 1.5;
+    padding-bottom: 1.7rem;
+}
+.text-team2 {
     font-size: 16px;
     color: $primary-text-color;
     font-family: $text-font;
