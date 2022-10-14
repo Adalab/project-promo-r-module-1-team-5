@@ -76,11 +76,12 @@
     }
 }
 
+.article__div{
+    width: 50px;
+
+}
 
 .img{
-    overflow: none;
-    width: 180px;
-    height: 180px;
     border-radius: 4px;
     border: solid 5px rgba(0, 0, 0, 0.08) ;
     @include tablet {
