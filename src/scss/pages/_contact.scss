@@ -73,7 +73,7 @@
         margin-top: 0rem;  
     }
     @include desktop{
-        
+        padding: 0;
         margin-top: 5.25rem;
         margin-left: 18.75rem;
         margin-right: 18.75rem;
@@ -110,6 +110,7 @@
 .section-form__elements {
     display: flex;
     flex-direction: column;
+    gap: 2.8rem;
     
     @include desktop {
         flex-direction: row;
@@ -118,6 +119,11 @@
       
 
     }
+
+    /*&--div {
+        flex-direction: column;
+    }*/
+
     &--mail{
         @include desktop {
             width: 24.6rem;
@@ -133,7 +139,7 @@
     }
     &--label{
         @include desktop {
-            margin-left: 2.813rem;
+            
             
         }
         
