@@ -96,7 +96,7 @@
     }
 
     @include desktop {
-        width: 37rem;
+        width: 36rem;
     }
    
 }    
@@ -110,12 +110,14 @@
 .section-form__elements {
     display: flex;
     flex-direction: column;
-    gap: 2.8rem;
+    
     
     @include desktop {
         flex-direction: row;
-        padding-top: 2.4rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         width: 100%;
+        gap: 2.5rem;
       
 
     }
@@ -126,14 +128,14 @@
 
     &--mail{
         @include desktop {
-            width: 24.6rem;
+            width: 24rem;
             
         }
 
     }
     &--tel{
         @include desktop {
-            width: 10.125rem;
+            width: 8rem;
             
         }
     }
@@ -152,6 +154,10 @@
     @include tablet {
         display: flex;
         justify-content: end;
+    }
+
+    @include desktop {
+
     }
 }
 
