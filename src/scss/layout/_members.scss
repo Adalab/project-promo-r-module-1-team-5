@@ -1,9 +1,12 @@
 .who {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     @include tablet{
         padding-left: 2rem;
-        padding-right: 2rem;
-        
+        padding-right: 2rem; 
+    }
+    @include desktop{
+        padding-left: 8rem;
+        padding-right: 8rem;  
     }
 }
 #quienes{
@@ -97,7 +100,11 @@
     height: 13rem;
     border: solid 0.5rem #e8e8e8;
     border-radius: 4px;
-    object-fit: cover;      
+    object-fit: cover; 
+    @include desktop{
+        width: 15rem;
+        height: 15rem;  
+    }     
 }
 
 .name {

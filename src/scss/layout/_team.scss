@@ -7,6 +7,9 @@
     @include tablet {
        margin: 0rem 2rem 2rem 2rem;
     }
+    @include desktop{
+        padding: 0.65rem 14rem 1.7rem 14rem;   
+    }
 }
 #equipo {
     scroll-margin-top: 100px; 
