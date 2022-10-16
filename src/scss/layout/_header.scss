@@ -15,8 +15,9 @@
 .header__title {
   font-size: 18px;
   font-family: $text-title;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
+  text-shadow: $fourth-color 2px 1px 4px;  
   padding: 1.7rem;
   @include tablet {
     text-align: left;
@@ -24,7 +25,9 @@
   }
   a {
     text-decoration: none;
-    color: $tertiary-color;
+    color: #566B87;
+    
+   
   }
 }
 .header__nav {
@@ -51,10 +54,22 @@
   a {
     text-decoration: none;
     color: $tertiary-color;
+    &:hover {
+      color: $membersname-color;
+      @include tablet {
+        color: $tertiary-color;
+      }
+    }
+    @include tablet {
+      color: $details-color;      
+    }      
   }
 }
+
 .nav__list-item {
   text-transform: uppercase;
   font-family: $text-title;
   font-size: 15px;
+  
 }
+
